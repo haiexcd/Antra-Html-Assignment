@@ -1,0 +1,265 @@
+/* ----- All ------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem 7rem;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----- header ------ */
+
+.antraLogo {
+    width: 12rem;
+    position: relative;
+    top: 2rem;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* ----- instruction section ----- */
+
+.designLine {
+    margin-left: 1.2rem;
+}
+
+
+.instructionLine {
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+}
+
+ul {
+    margin: 3px 0;
+}
+
+
+/* ----- sign up form section ----- */
+
+.signUpLine {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.form {
+    padding: 0 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+.formName {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+.inputText {
+    font-size: 1.1rem;
+    height: 2.5rem;
+    padding: 0 12px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    border: 1px solid rgba(152, 152, 152, 0.6);
+    outline: none;
+}
+
+input:hover,
+input:focus {
+    border: 1px solid rgba(68, 151, 220, 0.8);
+    box-shadow: 0 0 5px rgba(68, 151, 220, 0.8);
+}
+
+/* -------- agreement section ------- */
+
+.agreementSection {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.agreementSection .agree {
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+.agreementDetails {
+    font-size: 0.9rem;
+}
+
+.btnRegister {
+    background-color: #297cc0;
+    border: 1px solid #297cc0;
+    border-radius: 3px;
+    color: white;
+}
+
+.button {
+    font-size: 1.1rem;
+    height: 2.5rem;
+    width: 100%;
+}
+
+.btnSignIn {
+    background-color: rgb(79, 176, 79);
+    border: 1px solid rgb(79, 176, 79);
+    border-radius: 3px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #4497dc;
+}
+
+/* ---------- footer --------- */
+
+footer {
+    font-size: 12px;
+}
+
+footer a {
+    color: black;
+}
+
+hr {
+    position: relative;
+    margin: 10rem 1rem 0 0;
+}
+
+.antraAddress {
+    margin: 0;
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
+/* ------- responsive media ------ */
+
+@media (max-width: 1000px) {
+    .form {
+      padding: 0 5rem;
+    }
+    .inputText,
+    .button {
+      font-size: 1rem;
+    }
+  
+    h1 {
+      padding: 1rem 0;
+    }
+  }
+  
+  @media (max-width: 920px) {
+    footer {
+      padding-top: 20rem;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    body {
+      padding: 0 1rem;
+    }
+    .form {
+      padding: 0 1rem;
+    }
+  
+    .topSection p,
+    li {
+      font-size: 0.8rem;
+    }
+  
+    .agreementSection {
+      grid-template-columns: 1.5fr 4fr;
+    }
+    .instruction,
+    .agreementSection,
+    .inputText {
+      font-size: 0.8rem;
+    }
+  
+    .agreementDetails,
+    .btnRegister {
+      font-size: 0.7rem;
+    }
+    .signUp {
+      font-size: 2rem;
+    }
+  
+    .formName {
+      grid-gap: 2rem;
+    }
+  
+    footer {
+      padding-top: 10rem;
+      padding-bottom: 1rem;
+      font-size: 0.6rem;
+    }
+  
+    .button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .antraLogo {
+      width: 8rem;
+      position: relative;
+      top: 1rem;
+    }
+  
+    h1,
+    .signUp {
+      font-size: 95%;
+    }
+  
+    .form {
+      padding: 0 0.5rem;
+    }
+    .formName {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+  
+    .topSection p,
+    li {
+      font-size: 0.7rem;
+    }
+  
+    .instruction,
+    .agreementSection,
+    .inputText {
+      font-size: 0.65rem;
+    }
+  
+    .agreementDetails,
+    .btnRegister {
+      font-size: 0.55rem;
+    }
+  
+    footer {
+      font-size: 0.5rem;
+      padding-top: 7rem;
+    }
+  
+    .inputText,
+    .button {
+      font-size: 0.7rem;
+      height: 2rem;
+    }
+  }
